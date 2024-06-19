@@ -512,31 +512,41 @@ nav {
         display: none;
         justify-content: space-around;
         flex-direction: column;
-        background-color: #fff;
+        background-color: #f0f0f0;
         z-index: 1;
         top: 60px;
         position: absolute;
     }
-
+    
     .menu-desplegado ul {
         list-style-type: none;
         margin: 20px auto;
         font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+
     }
 
     .menu-desplegado li {
-        display: inline;
-        padding: 5px;
         font-size: 0.8em;
+    }
+
+    .menu-desplegado li:hover {
+        text-decoration: underline;
+
     }
 
     .menu-desplegado a {
         text-decoration: none;
         text-align: center;
-        padding: 10px;
         font-weight: bold;
         color: #000;
         cursor: pointer;
+    }
+
+    .menu-desplegado a:hover {
+        text-decoration: underline;
     }
 
     .menu-desplegado ion-icon {
@@ -578,7 +588,6 @@ nav {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 10px;
     }
 
     .menu-desplegable:hover+.menu-desplegado {
